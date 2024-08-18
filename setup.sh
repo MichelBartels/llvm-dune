@@ -137,7 +137,6 @@ create_dune_file     llvm.bitreader       bitreader                  llvm_bitrea
 create_dune_file     llvm.bitwriter       bitwriter                  llvm_bitwriter       bitwriter_ocaml       "llvm unix"                       "bitwriter"
 create_dune_file     llvm.executionengine executionengine            llvm_executionengine executionengine_ocaml "llvm llvm.target ctypes"         "executionengine mcjit native"
 create_dune_file     llvm.irreader        irreader                   llvm_irreader        irreader_ocaml        "llvm"                            "irreader"
-create_dune_file     llvm.scalar_opts     transforms/scalar_opts     llvm_scalar_opts     scalar_opts_ocaml     "llvm"                            "scalaropts"
 create_dune_file     llvm.transform_utils transforms/utils           llvm_transform_utils transform_utils_ocaml "llvm"                            "transformutils"
 create_dune_file     llvm.passbuilder     transforms/passbuilder     llvm_passbuilder     passbuilder_ocaml     "llvm"                            "passes"
 create_dune_file     llvm.target          target                     llvm_target          target_ocaml          "llvm"                            "target"

@@ -29,14 +29,14 @@ if test "$llvm_version" != "$expected_version"; then
   exit 1
 fi
 
-if llvm_config --link-static --libs; then
-    default_mode=static
-    support_static_mode=true
-fi
-
 if llvm_config --link-shared --libs; then
     default_mode=shared
     support_shared_mode=true
+fi
+
+if llvm_config --link-static --libs; then
+    default_mode=static
+    support_static_mode=true
 fi
 
 if test -z "$default_mode"; then

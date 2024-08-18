@@ -1,4 +1,4 @@
 [submodule "llvm-project"]
 	path = llvm-project
 	url = https://github.com/alan-j-hu/llvm-project
-        branch = release/16.x+opam
+	branch = 18.1.8
